@@ -29,8 +29,10 @@ for attr, value in sorted(FLAGS.__flags.items()):
 print("")
 
 # CHANGE THIS: Load data. Load your own data here
-x_raw = ["a masterpiece four years in the making", "everything is off."]
-y_test = [0, 1]
+#x_raw = ["a masterpiece four years in the making", "everything is off."]
+#y_test = [0, 1]
+
+x_raw,y_test = data_helpers.load_eval_data_and_labels()
 
 # Map data into vocabulary
 vocab_path = os.path.join(FLAGS.checkpoint_dir, "..", "vocab")
